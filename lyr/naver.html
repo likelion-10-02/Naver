@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVER 로그인 폼</title>
+  <link rel="stylesheet" href="./naver.css" />
+</head>
+
+<body>
+  <!--로고 이미지-->
+  <header class="head">
+    <h1 class="logo">
+      <a href="/">
+        <img src="./logo.svg" alt="네이버" />
+      </a>
+    </h1>
+  </header>
+  <!--로그인 입력 서식-->
+  <section class="login">
+    <form action="/" class="login-form">
+      <fieldset>
+        <legend class="sr-only">회원 로그인 서식</legend>
+        <div class="login-input-group">
+          <!--1.아이디 입력 서식-->
+          <div role="group" class="form-input">
+            <label for="userEmail" class="sr-only">아이디</label>
+            <input type="email" id="userEmail" required placeholder="아이디(이메일)" name="userEmail" />
+          </div>
+          <!--2.비밀번호 입력 서식-->
+          <div role="group" class="form-input">
+            <label for="userPwd" class="sr-only">비밀번호</label>
+            <input type="password" id="userPwd" required placeholder="비밀번호" name="userPwd" />
+          </div>
+
+          <!--3.로그인 보안 관련-->
+          <ul class="login-secure-group">
+            <!--1)상태유지 체크박스-->
+            <li>
+              <div role="group">
+                <input type="checkbox" />
+                <label for="">로그인 상태유지</label>
+              </div>
+            </li>
+            <!--2)ip 보안-->
+            <li>
+              <ul class="ip-group">
+                <li><a href="./ip_security.html" target="_blank">IP 보안</a></li>
+                <li>
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="ipSecurity" name="ipSecurity"/>
+                    <label for="ipSecurity">ON</label>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--4.로그인 버튼-->
+        <button type="button" class="login-button">로그인</button>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
