@@ -1,21 +1,50 @@
+@import "reset.css";
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
+}
+
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
+}
+
 * {
-  font-size: 16px;
-  color: #181818;
+  font-size: var(--default-font-size);
+  color: var(--black);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
 }
 
 body {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 main {
+  display: flex;
   width: 100%;
   max-width: 500px;
   text-align: center;
-  display: flex;
 }
 
 .logo {
@@ -101,4 +130,4 @@ main {
   .login-form .login-form-bottom .login-ip {
     display: none;
   }
-}/*# sourceMappingURL=layout.css.map */
+}/*# sourceMappingURL=base.css.map */
