@@ -29,7 +29,7 @@ body{
   line-height: 1.15;
 }
 
-.custom-focus:focus {
+.custom-tab-style:focus {
   outline: 2px solid blue;
 }
 
