@@ -13,7 +13,10 @@
   <header class="head">
     <h1 class="logo">
       <a href="/">
-        <img src="./logo.svg" alt="네이버" />
+        <picture>
+          <source srcset="" sizes="(max-width: 230px)" />
+          <img src="./logo.svg" alt="네이버" />
+        </picture>
       </a>
     </h1>
   </header>
@@ -45,15 +48,11 @@
             </li>
             <!--2)ip 보안-->
             <li>
-              <ul class="ip-group">
-                <li><a href="./ip_security.html" target="_blank">IP 보안</a></li>
-                <li>
-                  <div class="form-checkbox">
-                    <input type="checkbox" id="ipSecurity" name="ipSecurity"/>
-                    <label for="ipSecurity">ON</label>
-                  </div>
-                </li>
-              </ul>
+              <a href="./ip_security.html" target="_blank" rel="noopener noreferrer">IP 보안</a>
+              <div class="form-checkbox">
+                <input type="checkbox" id="ipSecurity" name="ipSecurity"/>
+                <label for="ipSecurity">ON</label>
+              </div>
             </li>
           </ul>
         </div>

@@ -1,3 +1,5 @@
+@import url(/lyr/styles/reset.css);
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -29,9 +31,6 @@
   flex-direction: column;
 
   fieldset{
-    margin: 0;
-    border: 0;
-    
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -67,15 +66,7 @@
   }
 }
 
-/*IP보안 체크박스*/
-.ip-group{
-  display: flex;
-  flex-direction: row;
-
-  /*on,off 스위치*/
-  .form-checkbox{
-    position: relative;
-
-    
-  }
+/*IP보안- on,off 스위치*/
+.form-checkbox{
+  display: inline-block;
 }
