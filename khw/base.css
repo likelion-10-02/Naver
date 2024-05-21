@@ -1,0 +1,133 @@
+@import "reset.css";
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
+}
+
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
+}
+
+* {
+  font-size: var(--default-font-size);
+  color: var(--black);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+:root {
+  --default-font-size: 16px;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --black: #181818;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 230px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    margin: 60px 20px 0;
+  }
+  .login-form input {
+    min-width: 100%;
+    max-width: 500px;
+  }
+}
+.login-form {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px 20px;
+}
+.login-form input {
+  width: inherit;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  height: 45px;
+  border: 1px solid #dadada;
+  background-color: #fff;
+}
+.login-form input:focus, .login-form input:focus-visible {
+  border: 2px solid #24388d;
+  background-color: #e9f0fd;
+  outline: 0;
+  margin-left: -1px;
+}
+.login-form input:nth-child(2) {
+  margin-top: 0.5rem;
+}
+.login-form .login-btn {
+  height: 45px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #03cf5d;
+  border: 0;
+}
+.login-form .login-form-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  line-height: 1rem;
+}
+.login-form .login-form-bottom .login-keep {
+  display: flex;
+}
+.login-form .login-form-bottom .login-keep .login-keep-checkbox {
+  height: auto;
+  display: none;
+}
+.login-form .login-form-bottom .login-keep .login-keep-checkbox + label.check-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-form .login-form-bottom .login-keep .login-keep-checkbox + label.check-text::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 1.4rem;
+  background: url(./icons/unchecked.svg);
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .login-form .login-form-bottom .login-ip {
+    display: none;
+  }
+}/*# sourceMappingURL=base.css.map */

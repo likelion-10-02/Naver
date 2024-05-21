@@ -1,0 +1,114 @@
+@import "_variables.scss";
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .login-form {
+    margin: 60px 20px 0;
+
+    input {
+      min-width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+.login-form {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px 20px;
+
+  input {
+    width: inherit;
+    padding: .75rem 1rem;
+    font-size: 14px;
+    height: 45px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+
+    &:focus,
+    &:focus-visible {
+      border: 2px solid #24388d;
+      background-color: #e9f0fd;
+      outline: 0;
+      margin-left: -1px;
+    }
+
+    &:nth-child(2) {
+      margin-top: .5rem;
+    }
+  }
+  .login-btn {
+    height: 45px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #03cf5d;
+    border: 0;
+  }
+  .login-form-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    line-height: 1rem;
+
+    .login-keep {
+      display: flex;
+
+      .login-keep-checkbox {
+        height: auto;
+        display: none;
+
+        + label {
+
+          &.check-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              line-height: 1.4rem;
+              background: url(./icons/unchecked.svg);
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .login-ip {
+        display: none;
+      }
+    }
+  }
+}

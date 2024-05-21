@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+* {
+  font-size: var(--default-font-size);
+  color: var(--black);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
